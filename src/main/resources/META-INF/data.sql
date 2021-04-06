@@ -1,0 +1,57 @@
+INSERT into colors values(1,'000000', 'Preto');
+INSERT into colors values(2,'808080', 'Cinza');
+INSERT into colors values(3,'c0c0c0', 'Prata');
+INSERT into colors values(4,'6a5acd', 'Azul ardósia');
+INSERT into colors values(5,'483d8b', 'DarkSlateBlue');
+INSERT into colors values(6,'191970', 'Azul da meia noite');
+INSERT into colors values(7,'000080', 'Marinha');
+INSERT into colors values(8,'00008b', 'Azul escuro');
+INSERT into colors values(9,'0000cd', 'Azul Médio');
+INSERT into colors values(10,'0000ff', 'Azul');
+INSERT into colors values(11,'4169e1', 'Azul Real');
+INSERT into colors values(12,'00bfff', 'DeepSkyBlue');
+INSERT into colors values(13,'87cefa', 'LightSkyBlue');
+INSERT into colors values(14,'87ceeb', 'Céu azul');
+INSERT into colors values(15,'add8e6', 'Azul claro');
+INSERT into colors values(16,'4682b4', 'SteelBlue');
+INSERT into colors values(17,'00ffff', 'Aqua / Cyan');
+INSERT into colors values(18,'00ced1', 'DarkTurquoise');
+INSERT into colors values(19,'40e0d0', 'Turquesa');
+INSERT into colors values(20,'48d1cc', 'Turquesa Média');
+INSERT into colors values(21,'00ff7f', 'Primavera verde');
+INSERT into colors values(22,'90ee90', 'Luz verde');
+INSERT into colors values(23,'006400', 'Verde escuro');
+INSERT into colors values(24,'008000', 'Verde');
+INSERT into colors values(25,'32cd32', 'Verde limão');
+INSERT into colors values(26,'7cfc00', 'LawnGreen');
+INSERT into colors values(27,'adff2f', 'Verde amarelo');
+INSERT into colors values(28,'4b0082', 'Índigo');
+INSERT into colors values(29,'a0200f0', 'Roxo');
+INSERT into colors values(30,'ff00ff', 'Magenta');
+INSERT into colors values(31,'ff1493', 'Rosa escuro');
+INSERT into colors values(32,'ff69b4', 'Rosa quente');
+INSERT into colors values(33,'ffb6c1', 'Luz rosa');
+INSERT into colors values(34,'ffc0cb', 'Cor de rosa');
+INSERT into colors values(35,'dc143c', 'Carmesim');
+INSERT into colors values(36,'800000', 'Marrom');
+INSERT into colors values(37,'8b0000', 'Vermelho escuro');
+INSERT into colors values(38,'fa8072', 'Salmão');
+INSERT into colors values(39,'ff0000', 'Vermelho');
+INSERT into colors values(40,'ff4500', 'Laranja Vermelho');
+INSERT into colors values(41,'ff8c00', 'Laranja escuro');
+INSERT into colors values(42,'ffa500', 'laranja');
+INSERT into colors values(43,'ffd700', 'Ouro');
+INSERT into colors values(44,'ffff00', 'Amarelo');
+INSERT into colors values(45,'f5f5dc', 'Bege');
+INSERT into colors values(46,'ffe4b5', 'Mocassim');
+INSERT into colors values(47,'e6e6fa', 'Lavanda');
+INSERT into colors values(48,'e0ffff', 'Ciano claro');
+INSERT into colors values(49,'ff7f50', 'Coral');
+INSERT into colors values(50,'9370db', 'Médio Roxo');
+INSERT into colors values(51,'ffffff', 'Branco');
+INSERT into colors values(52,'cccccc', 'Prata escuro');
+INSERT into colors values(53,'00ff00', 'Verde');
+
+
+
+
