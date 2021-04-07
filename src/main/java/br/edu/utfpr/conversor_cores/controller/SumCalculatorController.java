@@ -45,7 +45,7 @@ public class SumCalculatorController extends HttpServlet {
         String gandalf = "https://www.youtube.com/watch?v=G1IbRujko-A&ab_channel=10Hours";
 
         Cookie cookie_test = new Cookie("gandalf", gandalf);
-        cookie_test.setMaxAge(20);
+        cookie_test.setMaxAge(60*60*24);
         response.addCookie(cookie_test);
 
         request.getRequestDispatcher("criar-conversao").forward(request, response);

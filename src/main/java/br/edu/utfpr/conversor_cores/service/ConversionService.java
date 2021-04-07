@@ -4,7 +4,6 @@ import br.edu.utfpr.conversor_cores.model.dao.ConversionDAO;
 import br.edu.utfpr.conversor_cores.model.domain.Conversion;
 
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
 public class ConversionService extends AbstractService<Long, Conversion> {

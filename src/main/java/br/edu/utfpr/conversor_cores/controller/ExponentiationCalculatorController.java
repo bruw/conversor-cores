@@ -1,4 +1,5 @@
 package br.edu.utfpr.conversor_cores.controller;
+import br.edu.utfpr.conversor_cores.model.dao.ConversionDAO;
 import br.edu.utfpr.conversor_cores.service.ConversionService;
 
 import javax.servlet.*;

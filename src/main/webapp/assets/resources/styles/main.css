@@ -1,11 +1,11 @@
-h1{
+h1 {
     text-align: center;
     margin-top: 50px;
     padding-bottom: 60px;
     font-size: 40px;
 }
 
-nav{
+nav {
     background-color: #000000;
 }
 
@@ -34,19 +34,19 @@ footer :nth-child(1) {
     height: 15px;
 }
 
-footer :nth-child(2){
+footer :nth-child(2) {
     margin-top: 10px;
     text-align: center;
     color: white;
     height: 15px;
 }
 
-#form-converter{
+#form-converter {
     margin-left: 20%;
     margin-right: 20%;
 }
 
-#button-convert{
+#button-convert {
     background-color: #1a1e21;
     width: 40%;
     margin-left: 31%;
@@ -54,7 +54,7 @@ footer :nth-child(2){
     margin-bottom: 30px;
 }
 
-#input-red{
+#input-red {
     text-align: center;
     margin-top: 10px;
     width: 80%;
@@ -64,7 +64,7 @@ footer :nth-child(2){
 }
 
 
-#input-green{
+#input-green {
     text-align: center;
     margin-top: 10px;
     width: 80%;
@@ -74,7 +74,7 @@ footer :nth-child(2){
 }
 
 
-#input-blue{
+#input-blue {
     text-align: center;
     margin-top: 10px;
     width: 80%;
@@ -83,21 +83,21 @@ footer :nth-child(2){
     border: 2px solid #0a58ca;
 }
 
-label[for=input-red]{
+label[for=input-red] {
     margin-top: 30px;
     margin-left: 10%;
     color: #EF5350;
     font-size: 20px;
 }
 
-label[for=input-green]{
+label[for=input-green] {
     margin-top: 30px;
     margin-left: 10%;
     color: #00C853;
     font-size: 20px;
 }
 
-label[for=input-blue]{
+label[for=input-blue] {
     margin-top: 30px;
     margin-left: 10%;
     color: #0a58ca;
@@ -105,14 +105,14 @@ label[for=input-blue]{
 }
 
 
-#canvas-border{
+#canvas-border {
     border: 16px solid;
     border-image-slice: 1;
     border-width: 3px;
     border-image-source: linear-gradient(red, green, blue);
 }
 
-canvas{
+canvas {
     width: 40%;
     height: 20%;
     margin-left: 30%;
@@ -122,26 +122,25 @@ canvas{
 }
 
 
-
 /* label focus color */
-.input-field input[type=text]:focus  + label {
+.input-field input[type=text]:focus + label {
     color: #1a1e21 !important;
 }
 
 /* label underline focus color */
-.input-field input[type=text]:focus  {
-    border-bottom: 1px solid #1a1e21!important;
-    box-shadow: 0 1px 0 0 #1a1e21!important;
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #1a1e21 !important;
+    box-shadow: 0 1px 0 0 #1a1e21 !important;
 }
 
 
-#color-name{
+#color-name {
     margin-top: 80px;
     text-align: center;
     color: #1a1e21;
 }
 
-td a{
+td a {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 3px;
@@ -149,7 +148,7 @@ td a{
 }
 
 
-#button-cancel-edit{
+#button-cancel-edit {
     margin-top: 100px;
     width: 40%;
     margin-left: 30%;

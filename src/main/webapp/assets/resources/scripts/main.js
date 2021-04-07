@@ -2,29 +2,34 @@ $(document).ready(function () {
     $('.sidenav').sidenav();
     $('.modal').modal();
 
-    let red = $("#input-red").val();
 
-    if (red !== null && red !== undefined) {
+    (function () {
+        let red = $("#input-red").val();
 
-        let green = $("#input-green").val();
-        let blue = $("#input-blue").val();
-        let hexadecimal = $("#input-hexadecimal").val();
-        let conversion = {
-            hexadecimal: hexadecimal,
-            red: red,
-            green: green,
-            blue: blue
-        };
+        if (red !== null && red !== undefined) {
 
-        localStorage.clear();
-        localStorage.setItem('last_conv', JSON.stringify(conversion));
-    }
+            let green = $("#input-green").val();
+            let blue = $("#input-blue").val();
+            let hexadecimal = $("#input-hexadecimal").val();
+            let conversion = {
+                hexadecimal: hexadecimal,
+                red: red,
+                green: green,
+                blue: blue
+            };
+
+            localStorage.clear();
+            localStorage.setItem('last_conv', JSON.stringify(conversion));
+        }
+    })();
 
 
-    let last_conv = JSON.parse(localStorage.getItem('last_conv'));
-    console.log("Última Conversão: ");
-    console.log("hexadecimal: " + last_conv.hexadecimal);
-    console.log("RGB(" + last_conv.red + ", " + last_conv.green + ", " + last_conv.blue + ")");
+    (function () {
+        let last_conv = JSON.parse(localStorage.getItem('last_conv'));
+        console.log("Última Conversão: ");
+        console.log("hexadecimal: " + last_conv.hexadecimal);
+        console.log("RGB(" + last_conv.red + ", " + last_conv.green + ", " + last_conv.blue + ")");
+    })();
 
 
     $("canvas").on("click", function () {
@@ -38,6 +43,16 @@ $(document).ready(function () {
 
     });
 
+    document.getElementById('input-hexadecimal').addEventListener('focus', function (event) {
+        this.value = "";
+    });
+
+    document.getElementById('input-hexadecimal').addEventListener('keypress', function (event) {
+        if ((this.value.length > 5) && (event.keyCode != 13)) {
+            event.preventDefault();
+        }
+
+    });
 
     document.getElementById('input-hexadecimal').addEventListener('keypress', function (event) {
         if (((event.keyCode < 48) || (event.keyCode > 57)) &&

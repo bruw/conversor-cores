@@ -1,5 +1,7 @@
 package br.edu.utfpr.conversor_cores.controller;
 
+import br.edu.utfpr.conversor_cores.model.dao.AbstractDAO;
+import br.edu.utfpr.conversor_cores.model.dao.ConversionDAO;
 import br.edu.utfpr.conversor_cores.model.domain.Color;
 import br.edu.utfpr.conversor_cores.model.domain.Conversion;
 import br.edu.utfpr.conversor_cores.service.ColorService;
@@ -10,6 +12,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 
@@ -17,6 +20,7 @@ import java.util.List;
 public class ConversionManageController extends HttpServlet {
     ConversionService conversion_service = new ConversionService();
     ColorService color_service = new ColorService();
+    AbstractDAO abstractDAO = new AbstractDAO();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
