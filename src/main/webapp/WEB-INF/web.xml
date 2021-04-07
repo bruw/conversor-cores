@@ -23,6 +23,6 @@
     </error-page>
 
     <error-page>
-        <location>/WEB-INF/view/errors/erro.jsp</location>
+        <location>/WEB-INF/view/errors/server-error.jsp</location>
     </error-page>
 </web-app>

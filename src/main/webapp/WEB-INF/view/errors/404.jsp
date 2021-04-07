@@ -18,8 +18,9 @@
                 <div class="card grey darken-1">
                     <div class="card-content white-text">
                         <span class="card-title center"><i class="material-icons ">error</i>400</span>
-                        <p>Mensagem: Página não encontrada...</p>
-                        <p>Url Causadora: ${requestScope['javax.servlet.error.request_uri']}</p>
+                        <p><i class="material-icons">error_outline</i> Código do Erro: ${requestScope['javax.servlet.error.status_code']}</p>
+                        <p><i class="material-icons">error_outline</i> Mensagem: Página não encontrada...</p>
+                        <p><i class="material-icons">error_outline</i> Url Causadora: ${requestScope['javax.servlet.error.request_uri']}</p>
                     </div>
                     <div class="card-action black center">
                         <a href="/conversor-cores">Voltar a página inicial</a>
