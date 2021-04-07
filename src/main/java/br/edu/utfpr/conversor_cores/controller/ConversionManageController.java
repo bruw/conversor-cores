@@ -10,11 +10,10 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 
 
-@WebServlet(name = "ConversionManageController", urlPatterns = {"/remover", "/editar", "/criar-conversao"})
+@WebServlet(name = "ConversionManageController", urlPatterns = {"/remover", "/editar", "/criar-conversao", "/listar-conversoes"})
 public class ConversionManageController extends HttpServlet {
     ConversionService conversion_service = new ConversionService();
     ColorService color_service = new ColorService();
@@ -24,16 +23,22 @@ public class ConversionManageController extends HttpServlet {
         if(request.getServletPath().contains(Routes.DELETE)){
             Long id_delete = Long.parseLong(request.getParameter("id"));
             conversion_service.deleteById(id_delete);
-            request.getRequestDispatcher("/relatorio").forward(request, response);
-        }
+            response.sendRedirect("listar-conversoes");
+        }else{
+            if(request.getServletPath().contains(Routes.UPDATE)){
+                Long id_update = Long.parseLong(request.getParameter("id"));
+                Conversion conversion = conversion_service.getById(id_update);
+                request.setAttribute("conversion", conversion);
+                request.getRequestDispatcher("/WEB-INF/view/edit-conversion.jsp").forward(request, response);
+            }else{
+                if(request.getServletPath().contains(Routes.READ)){
+                    List<Conversion> conversions = conversion_service.findAll();
+                    request.setAttribute("conversions", conversions);
 
-        if(request.getServletPath().contains(Routes.UPDATE)){
-            Long id_update = Long.parseLong(request.getParameter("id"));
-            Conversion conversion = conversion_service.getById(id_update);
-            request.setAttribute("conversion", conversion);
-            request.getRequestDispatcher("/WEB-INF/view/edit-conversion.jsp").forward(request, response);
+                    request.getRequestDispatcher("/WEB-INF/view/report.jsp").forward(request, response);
+                }
+            }
         }
-
     }
 
     @Override
@@ -66,7 +71,7 @@ public class ConversionManageController extends HttpServlet {
                 }
             }
 
-            response.sendRedirect("relatorio");
+            response.sendRedirect("listar-conversoes");
         }else{
            if(request.getServletPath().contains(Routes.CREATE)){
                 color = color_service.getByProperty("hexadecimal", (String) request.getAttribute("hexadecimal"));

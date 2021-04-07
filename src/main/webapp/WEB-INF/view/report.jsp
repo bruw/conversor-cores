@@ -13,7 +13,7 @@
 <t:template title="Relatório" current_pag="relatorio">
     <jsp:body>
         <c:if test="${not empty conversions}">
-            <h1>Últimas 5 conversões</h1>
+            <h1>Conversões</h1>
 
             <table class="striped centered">
                 <thead>
@@ -43,7 +43,7 @@
                             <c:if test="${conv.color == null}">
                                 <a href="/conversor-cores/editar?id=${conv.id}" class="waves-effect waves-light btn-small blue">Atualizar</a>
                             </c:if>
-                                <a href="/conversor-cores/remover?id=${conv.id}" class="waves-effect waves-light btn-small red">Apagar</a>
+                                <a id="button-delete" href="/conversor-cores/remover?id=${conv.id}" class="waves-effect waves-light btn-small red">Apagar</a>
                         </td>
                     </tr>
                 </c:forEach>

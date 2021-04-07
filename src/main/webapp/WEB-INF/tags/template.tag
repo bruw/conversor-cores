@@ -31,7 +31,7 @@
                 <ul class="right hide-on-med-and-down">
                     <c:if test="${current_pag == 'inicio'}">
                         <li>
-                            <a href="relatorio"><i class="material-icons left">assignment</i>Relatório</a>
+                            <a href="listar-conversoes"><i class="material-icons left">assignment</i>Relatório</a>
                         </li>
                     </c:if>
 
@@ -43,7 +43,7 @@
 
                     <c:if test="${current_pag == 'editar'}">
                         <li>
-                            <a href="relatorio"><i class="material-icons left">assignment</i>Relatório</a>
+                            <a href="listar-conversoes"><i class="material-icons left">assignment</i>Relatório</a>
                         </li>
                         <li>
                             <a href="/conversor-cores"><i class="material-icons left">home</i>Início</a>
@@ -53,7 +53,7 @@
 
                 <ul class="sidenav" id="mobile-demo">
                     <c:if test="${current_pag == 'inicio'}">
-                        <li><a href="relatorio"><i class="material-icons left">assignment</i>Relatório</a></li>
+                        <li><a href="listar-conversoes"><i class="material-icons left">assignment</i>Relatório</a></li>
                     </c:if>
 
                     <c:if test="${current_pag == 'relatorio'}">
@@ -62,7 +62,7 @@
 
                     <c:if test="${current_pag == 'editar'}">
                         <li>
-                            <a href="relatorio"><i class="material-icons left">assignment</i>Relatório</a>
+                            <a href="listar-conversoes"><i class="material-icons left">assignment</i>Relatório</a>
                         </li>
                         <li>
                             <a href="/conversor-cores"><i class="material-icons left">home</i>Início</a>

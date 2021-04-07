@@ -35,7 +35,7 @@
 
         <div class="row">
             <div class="col s12">
-                <a href="relatorio" class="btn waves-effect waves-light red" id="button-cancel-edit">Cancelar</a>
+                <a href="listar-conversoes" class="btn waves-effect waves-light red" id="button-cancel-edit">Cancelar</a>
             </div>
         </div>
 
