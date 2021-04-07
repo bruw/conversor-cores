@@ -2,7 +2,6 @@ $(document).ready(function () {
     $('.sidenav').sidenav();
     $('.modal').modal();
 
-
     (function () {
         let red = $("#input-red").val();
 
@@ -22,7 +21,6 @@ $(document).ready(function () {
             localStorage.setItem('last_conv', JSON.stringify(conversion));
         }
     })();
-
 
     (function () {
         let last_conv = JSON.parse(localStorage.getItem('last_conv'));

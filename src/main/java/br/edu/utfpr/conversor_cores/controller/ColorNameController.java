@@ -16,12 +16,18 @@ public class ColorNameController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String hexadecimal = request.getParameter("hexadecimal");
-        Color color = color_service.getByProperty("hexadecimal", hexadecimal);
 
-        String json = new Gson().toJson(color);
-        response.setContentType("aplication/json");
-        response.setCharacterEncoding("UTF-8");
-        response.getWriter().write(json);
+        if(hexadecimal != ""){
+            Color color = color_service.getByProperty("hexadecimal", hexadecimal);
+
+            String json = new Gson().toJson(color);
+            response.setContentType("aplication/json");
+            response.setCharacterEncoding("UTF-8");
+            response.getWriter().write(json);
+        }else{
+            response.sendRedirect("/conversao-cores");
+        }
+
     }
 
     @Override

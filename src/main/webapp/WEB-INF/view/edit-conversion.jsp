@@ -16,26 +16,27 @@
 
         <table>
             <thead>
-                <tr>
-                    <th>Cor</th>
-                    <th>Cor Hexadecimal</th>
-                    <th>Cor RGB</th>
-                    <th>Atualizar Cor</th>
-                </tr>
+            <tr>
+                <th>Cor</th>
+                <th>Cor Hexadecimal</th>
+                <th>Cor RGB</th>
+                <th>Atualizar Cor</th>
+            </tr>
             </thead>
             <tbody>
-                <td>N/A</td>
-                <td>${conversion.hexadecimal}</td>
-                <td>${conversion.rgb}</td>
+            <td>N/A</td>
+            <td>${conversion.hexadecimal}</td>
+            <td>${conversion.rgb}</td>
             <td> <!-- Modal Trigger -->
-                <a class="btn-floating btn-large waves-effect waves-light blue modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
+                <a class="waves-effect waves-light btn-small blue modal-trigger" href="#modal1">Editar</a>
             </td>
             </tbody>
         </table>
 
         <div class="row">
             <div class="col s12">
-                <a href="listar-conversoes" class="btn waves-effect waves-light red" id="button-cancel-edit">Cancelar</a>
+                <a href="listar-conversoes" class="btn waves-effect waves-light red"
+                   id="button-cancel-edit">Cancelar</a>
             </div>
         </div>
 
@@ -47,12 +48,11 @@
                     <h4>Adicionar Nome da Cor</h4>
                     <label for="input-new-color">Nome da Cor</label>
                     <input name="input-new-color" id="input-new-color" type="text">
-                    <input  class="hide" type="text" name="id-current-conversion" value="${conversion.id}">
+                    <input class="hide" type="text" name="id-current-conversion" value="${conversion.id}">
                     <button class="modal-close waves-effect waves-light btn-small center blue">Atualizar</button>
                 </form>
             </div>
         </div>
-
 
     </jsp:body>
 </t:template>

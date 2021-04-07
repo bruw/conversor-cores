@@ -20,11 +20,16 @@ public class ExponentiationCalculatorController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String hexadecimal = request.getParameter("hexadecimal");
-        String result = conversion_service.calculateExponentiation(hexadecimal);
 
-        request.setAttribute("hexadecimal", hexadecimal);
-        request.setAttribute("result", result);
+        if(hexadecimal != ""){
+            String result = conversion_service.calculateExponentiation(hexadecimal);
+            request.setAttribute("hexadecimal", hexadecimal);
+            request.setAttribute("result", result);
 
-        request.getRequestDispatcher("/soma-conversao").forward(request, response);
+            request.getRequestDispatcher("/soma-conversao").forward(request, response);
+        }else{
+            response.sendRedirect("/conversao-cores");
+        }
+
     }
 }

@@ -49,6 +49,7 @@
                     <canvas id="canvas-border" style="background-color: rgb(${red}, ${green}, ${blue})"></canvas>
                 </div>
             </div>
+
         </c:if>
     </jsp:body>
 </t:template>

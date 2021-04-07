@@ -41,9 +41,11 @@
                             </c:if>
 
                             <c:if test="${conv.color == null}">
-                                <a href="/conversor-cores/editar?id=${conv.id}" class="waves-effect waves-light btn-small blue">Atualizar</a>
+                                <a href="/conversor-cores/editar?id=${conv.id}"
+                                   class="waves-effect waves-light btn-small blue">Atualizar</a>
                             </c:if>
-                                <a id="button-delete" href="/conversor-cores/remover?id=${conv.id}" class="waves-effect waves-light btn-small red">Apagar</a>
+                            <a href="/conversor-cores/remover?id=${conv.id}"
+                               class="waves-effect waves-light btn-small red">Apagar</a>
                         </td>
                     </tr>
                 </c:forEach>
